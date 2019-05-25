@@ -1,0 +1,210 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.main_conteiner {
+    height: auto;
+    width: 340px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    background: rgb(250, 250, 250);
+}
+
+
+.main_conteiner h2 {
+    font-style: italic;
+    font-size: 28px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    text-shadow: 0 0 0 #333;
+    color: transparent;
+    transition: all .5s;
+}
+.main_conteiner h2:hover {
+    text-shadow: 0 0 15px #999;
+}
+
+
+
+.add_task {
+    background: rgb(238, 238, 238); 
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+#title1 {
+    padding: 5px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 15px;
+    font-family: helvetica, sans-serif;
+}
+
+
+
+#knopochka {
+
+    margin: 7px; 
+    color: #fff; /* цвет текста */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(174, 174, 174); /* фон кнопки */
+    padding: 5px; 
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+}
+#knopochka:active {
+    background: rgb(99, 99, 99); 
+} 
+
+
+
+.main_conteiner ul {
+    height: auto;
+    max-height: 320px;
+    width: 80%;
+    margin-left: 0; 
+    padding-left: 0;
+    /* border: 1px solid rgb(189, 189, 189); */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: auto
+}
+.main_conteiner ul li {
+    height: auto;
+    list-style-type: none;
+    text-decoration: none;
+    /* padding: 5px; */
+    padding-left: 15px;
+    transition: .5s;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(189, 189, 189);
+
+
+}
+.main_conteiner ul li label {
+    word-wrap: break-word;
+    height: auto;
+    width: 90%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+
+}
+.main_conteiner ul li label div {
+    word-wrap: break-word;
+    word-break: break-all;
+    height: auto;
+    width: 90%;
+    margin-left: 8px;
+
+}
+.main_conteiner ul li:nth-child(2n) {
+    max-width: 250px;
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+    border: 1px solid rgb(189, 189, 189);
+
+}
+
+
+
+
+#deliteList {
+    margin: 0x; 
+    color: #fff; /* цвет текста */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(174, 174, 174); /* фон кнопки */
+    padding: 5px; 
+    border-radius: 10px;
+}
+#deliteList:active {
+    background: rgb(157, 97, 90); 
+} 
+#deliteList2 {
+    margin: 10px; 
+    color: #fff; /* цвет текста */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(174, 174, 174); /* фон кнопки */
+    padding: 5px; 
+    border-radius: 10px;
+}
+#deliteList2:active {
+    background: rgb(157, 97, 90); 
+} 
+
+
+
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+::-webkit-scrollbar-track {border-radius: 6px;}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-thumb {border-radius: 4px;background: #d8d8d8;}
+:hover::-webkit-scrollbar-thumb {background: #a2a2a2;}
+
+
+* { box-sizing: border-box; }
+input[type=checkbox] { display: none; }
+label {
+    position: relative;
+    height: 26px; 
+    line-height: 30px; 
+    margin: 4px; 
+    padding: 0px 4px 0px 8px;
+    display: inline-block; cursor: pointer;
+    /* border: 1px solid #aaa; border-radius: 5px; */
+    font-family: helvetica, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+
+.delete {
+    height: 23px;
+    width: 23px;
+    background:no-repeat left top url(https://api.icons8.com/download/62a92be89dfeaf8aad2ac897c989cae6875429c2/windows8/PNG/512/Industry/trash-512.png);
+    background-size: 100% auto;
+    line-height:20px;
+    text-align: right;
+    
+}
+
+.edit {
+    height: 23px;
+    width: 23px;
+    background:no-repeat left top url(https://image.flaticon.com/icons/png/512/61/61776.png);
+    background-size: 100% auto;
+    line-height:20px;
+    text-align: right;
+}
