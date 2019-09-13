@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src='./todoList.js'></script>
+    <link href="./todoList.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main_conteiner">
+
+        <h2>Список дел</h2>
+        <div class="add_task">
+            <input type="text" class="task" id="title1" placeholder="Что будет первым в нашем списке?">
+            <button class="knopka" id="knopochka" disabled></button>
+        </div>
+
+        <ul class="todo__list" id="todoList">
+
+        </ul>
+
+    </div>
+    <div id="bottomButton">
+        <button id="deliteList3" style="display:none;">Выбрать все</button>
+        <button id="deliteList2" style="display:none;">Отчистить выбранные </button>
+        <button id="deliteList" style="display:none;">Отчистить список</button>
+    </div>
+</body>
+
+</html>
