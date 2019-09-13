@@ -2,14 +2,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     scroll-behavior: smooth;
+    background: #c7b39b url(https://klv-oboi.ru/img/gallery/56/thumbs/thumb_l_25288.jpg);
 }
 
 .main_conteiner {
     height: auto;
-    width: 340px;
-    margin-top: 20px;
+    width: 450px;
+    margin-top: 120px;
     padding: 20px;
     border: 1px solid rgb(232, 232, 232);
     display: flex;
@@ -18,11 +19,12 @@ body {
     align-items: center;
     border-radius: 50px;
     background: rgb(250, 250, 250);
+    opacity: 0.93;
 }
 
 
 .main_conteiner h2 {
-    font-style: italic;
+    font-family: italic;
     font-size: 28px;
     margin-top: 0px;
     margin-bottom: 15px;
@@ -31,6 +33,7 @@ body {
     text-shadow: 0 0 0 #333;
     color: transparent;
     transition: all .5s;
+    letter-spacing: 1.1px;
 }
 .main_conteiner h2:hover {
     text-shadow: 0 0 15px #999;
@@ -39,6 +42,7 @@ body {
 
 
 .add_task {
+    
     background: rgb(238, 238, 238); 
     border-radius: 10px;
     padding: 5px 15px;
@@ -47,7 +51,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+    opacity: 1;
+     
 }
 
 
@@ -56,6 +61,7 @@ body {
     padding: 5px;
     border-radius: 10px;
     height: 40px;
+    width: 300px;
     font-size: 15px;
     font-family: helvetica, sans-serif;
 }
@@ -64,101 +70,111 @@ body {
 
 #knopochka {
 
-    margin: 7px; 
+    margin-left: 15px; 
     color: #fff; /* цвет текста */
     user-select: none; /* убирать выделение текста */
-    background: rgb(174, 174, 174); /* фон кнопки */
-    padding: 5px; 
+    /* padding: 5px;  */
     border-radius: 30px;
+    border: 1px solid #c5c5c5;
     height: 50px;
     width: 50px;
     font-size: 30px;
+    background: rgb(255, 255, 255) url(https://d30y9cdsu7xlg0.cloudfront.net/png/34129-200.png) 60% 60% no-repeat ;
+    background-size: cover;
+    opacity: 0.7;
+    transition: .3s;
+
+
+
+
+
+
 }
 #knopochka:active {
-    background: rgb(99, 99, 99); 
+    background: rgba(24, 216, 98, 0.26) url(https://d30y9cdsu7xlg0.cloudfront.net/png/34129-200.png) 60% 60% no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    transition: .3s; 
 } 
 
 
 
 .main_conteiner ul {
+
     height: auto;
-    max-height: 320px;
-    width: 80%;
-    margin-left: 0; 
-    padding-left: 0;
-    /* border: 1px solid rgb(189, 189, 189); */
+    max-height: 330px;
+    width: 410px;
+    margin-left: 0px; 
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start; 
     border-radius: 10px;
-    overflow: auto
+    overflow: auto;
+
+
 }
 .main_conteiner ul li {
-    height: auto;
     list-style-type: none;
     text-decoration: none;
-    /* padding: 5px; */
-    padding-left: 15px;
+    padding: 5px;
     transition: .5s;
     background: rgb(255, 255, 255);
     border-radius: 10px;
     border: 1px solid rgb(189, 189, 189);
-
-
-}
-.main_conteiner ul li label {
-    word-wrap: break-word;
-    height: auto;
-    width: 90%;
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-
-}
-.main_conteiner ul li label div {
     word-wrap: break-word;
     word-break: break-all;
+    width: 385px;
+    min-height: 40px;
     height: auto;
-    width: 90%;
-    margin-left: 8px;
-
+    display: flex;  
+    flex-direction: row;
+    align-items: center; 
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    transition: .3s; 
 }
+.main_conteiner ul li:hover {
+    transition: .3s; 
+}
+
+
+
+
 .main_conteiner ul li:nth-child(2n) {
-    max-width: 250px;
+    
+    width: 385px;
     background: rgb(232, 232, 232);
     border-radius: 10px;
     border: 1px solid rgb(189, 189, 189);
 
 }
 
-
-
-
-#deliteList {
-    margin: 0x; 
-    color: #fff; /* цвет текста */
-    user-select: none; /* убирать выделение текста */
-    background: rgb(174, 174, 174); /* фон кнопки */
-    padding: 5px; 
-    border-radius: 10px;
+ .delete {
+    height: 18px;
+    width: 18px;
+    line-height:20px;
+    text-align: right;
+    border: 2px;
+    margin-right: 0;
+    background: url(http://s1.iconbird.com/ico/0612/prettyoffice/w256h2561339405847Delete256.png) 100% 100% no-repeat;;
+    background-size: cover;
+    opacity: 0.8;
 }
-#deliteList:active {
-    background: rgb(157, 97, 90); 
-} 
-#deliteList2 {
-    margin: 10px; 
-    color: #fff; /* цвет текста */
-    user-select: none; /* убирать выделение текста */
-    background: rgb(174, 174, 174); /* фон кнопки */
-    padding: 5px; 
-    border-radius: 10px;
+.checkbox {
+    height: 18px;
+    width: 18px;
+    border: 2px;
+    opacity: 0.8;
 }
-#deliteList2:active {
-    background: rgb(157, 97, 90); 
-} 
+.spanClass {
+    width: 340px;
+    height: 100%;
+    display: block;
+    border: black
 
 
-
+}
 
 :active, :hover, :focus {
     outline: 0;
@@ -171,40 +187,123 @@ body {
 ::-webkit-scrollbar-thumb {border-radius: 4px;background: #d8d8d8;}
 :hover::-webkit-scrollbar-thumb {background: #a2a2a2;}
 
-
-* { box-sizing: border-box; }
-input[type=checkbox] { display: none; }
-label {
-    position: relative;
-    height: 26px; 
-    line-height: 30px; 
-    margin: 4px; 
-    padding: 0px 4px 0px 8px;
-    display: inline-block; cursor: pointer;
-    /* border: 1px solid #aaa; border-radius: 5px; */
-    font-family: helvetica, sans-serif;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;    
+.notVisible {
+    display: none;
 }
 
+#bottomButton {
+    position:relative;
+    width: 420px;
+    height: 50px;
+
+}
+
+#deliteList {
+    height: 40px;
+    position:absolute;
+    top:5px;
+    right:10px;
+    width:100px;
+    margin: 0x; 
+    color: rgb(70, 70, 70); /* цвет текста */
+    user-select: none; /* убирать выделение текста */
+    opacity: 0.75;
+    background: rgb(250, 250, 250);/* фон кнопки */
+    padding: 5px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    color: #524f4e;
+    background: white;
+
+}
+#deliteList:active {
+    background: rgb(157, 97, 90); 
+} 
+#deliteList:hover {
+    background: rgb(84, 144, 255);
+    box-shadow: 0 15px 20px rgba(145, 171, 255, 0.4);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+#deliteList2 {
+    height: 40px;
+    position:absolute;
+    top:5px;
+    right: 150px;
+    width:120px;
+    margin: 0px; 
+    color: rgb(70, 70, 70); /* цвет текста */
+    user-select: none; /* убирать выделение текста */
+    padding: 5px; 
+    border-radius: 10px;
+    border: 2px solid rgb(202, 202, 202);;
+    opacity: 0.75;
+    background: rgb(250, 250, 250);/* фон кнопки */
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    color: #524f4e;
+    background: white;
+
+}
+#deliteList2:active {
+    background: rgb(157, 97, 90); 
+    transition: .3s; 
+
+} 
+#deliteList2:hover {
+    background: rgb(84, 144, 255);
+    box-shadow: 0 15px 20px rgba(145, 171, 255, 0.4);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+
+#deliteList3 {
+    height: 40px;
+    position: absolute;
+    top:5px;
+    left:10px;
+    width:100px;
+    margin: 0x; 
+    color: rgb(70, 70, 70); /* цвет текста */
+    user-select: none; /* убирать выделение текста */
+    opacity: 0.75;
+    background: rgb(250, 250, 250);/* фон кнопки */
+    padding: 5px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1.1px;
+    color: #524f4e;
+    background: white;
+
+}
+#deliteList3:active {
+    background: rgb(157, 97, 90); 
+} 
+#deliteList3:hover {
+    background: rgb(84, 144, 255);
+    box-shadow: 0 15px 20px rgba(145, 171, 255, 0.4);
+    color: white;
+    transform: translateY(-3px);
+  }
 
 .delete {
-    height: 23px;
-    width: 23px;
-    background:no-repeat left top url(https://api.icons8.com/download/62a92be89dfeaf8aad2ac897c989cae6875429c2/windows8/PNG/512/Industry/trash-512.png);
-    background-size: 100% auto;
-    line-height:20px;
-    text-align: right;
-    
+    transition: .3s; 
 }
-
-.edit {
-    height: 23px;
-    width: 23px;
-    background:no-repeat left top url(https://image.flaticon.com/icons/png/512/61/61776.png);
-    background-size: 100% auto;
-    line-height:20px;
-    text-align: right;
+.delete:hover {
+    transition: .3s; 
+    box-shadow: 0 15px 20px rgba(145, 171, 255, 0.4);
+    color: white;
+    transform: translateY(-3px);
 }

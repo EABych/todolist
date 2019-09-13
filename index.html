@@ -5,7 +5,7 @@
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
         crossorigin="anonymous"></script>
         <script src='index.js'></script>
-        <link href="/home/eugene/work/jQuery/index.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
   
     </head>
     <body>
@@ -13,16 +13,19 @@
 
             <h2>Список дел</h2>
             <div class="add_task">
-                <input type="text" class="task" id="title1"  />
-                <button class="knopka" id="knopochka" disabled>+</button>
+                <input type="text" class="task" id="title1" placeholder="Что будет первым в нашем списке?">
+                <button class="knopka" id="knopochka" disabled></button>
             </div>
 
             <ul class="todo__list" id="todoList">
 
             </ul>
+
+        </div>            
+        <div id="bottomButton">
+            <button  id="deliteList3" style="display:none;">Выбрать все</button>
             <button  id="deliteList2" style="display:none;">Отчистить выбранные </button>
             <button  id="deliteList" style="display:none;">Отчистить список</button>
-
         </div>
     </body>
 </html>
